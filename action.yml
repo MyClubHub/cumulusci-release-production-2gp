@@ -17,7 +17,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - uses: MyClubHub/cumulusci-run-flow-scratch@v3
+    - uses: MyClubHub/cumulusci-run-flow-scratch@v4
       with:
         dev-hub-auth-url: '${{ inputs.dev-hub-auth-url }}'
         org-name: '${{ inputs.org-name }}'

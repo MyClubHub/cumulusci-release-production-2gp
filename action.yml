@@ -4,11 +4,11 @@ inputs:
   cumulusci-version:
     description: 'version of CumulusCI to install'
     required: false
-  sfdx-version:
-    description: 'version of SFDX to install'
+  sf-version:
+    description: 'version of sf to install'
     required: false
   dev-hub-auth-url:
-    description: 'SFDX auth URL for the Dev Hub'
+    description: 'sf auth URL for the Dev Hub'
     required: true
   org-name:
     description: 'Name of the scratch org config to use'
@@ -22,5 +22,5 @@ runs:
         dev-hub-auth-url: '${{ inputs.dev-hub-auth-url }}'
         org-name: '${{ inputs.org-name }}'
         cumulusci-version: '${{ inputs.cumulusci-version }}'
-        sfdx-version: '${{ inputs.sfdx-version }}'
+        sf-version: '${{ inputs.sf-version }}'
         flow-name: release_2gp_production
